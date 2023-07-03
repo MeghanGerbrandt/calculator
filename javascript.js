@@ -1,9 +1,6 @@
-const display = document.querySelector('.display');
-const numbers = document.querySelectorAll('.number');
-const operators = document.querySelectorAll('.operator');
-const equals = document.querySelector('.equals');
-const clear = document.querySelector('.clear');
-const buttons = document.querySelectorAll('button');
+const displayScreen = document.querySelector('.display-screen');
+const buttons = document.querySelectorAll('.button');
+const clearScreen = document.querySelector('.ac-button');
 
 
 const operate = (num1, num2, operator) => {
@@ -28,45 +25,18 @@ const divide = (num1, num2) => {
    return num1 / num2;
 }
 
-let displayValue= 0;
+let displayValue = 0;
 
-/*
-
-let displayInput = (e) => {
-    displayValue = e.target.value;
-    display.innerText = displayValue;
+for(let i=0; i < buttons.length; i++) {
+        buttons[i].addEventListener('click', function () {
+        displayScreen.value += this.value;
+        if(displayScreen.value === "AC") {
+            displayScreen.value = '';
+        }   
+    })
 }
 
-buttons.forEach(button => {
-    addEventListener('click', (e) => {
-        displayInput(e.target.innerHTML);
-        //alert(e.target.innerHTML);
-    })
-})
-
-
-/*display.innerHTML += displayValue;
-
-let displayInput = (e) => {
-    displayValue = e.target.id;
-    display.innerHTML = displayValue;
-}
-
-buttons.forEach(button => {
-    addEventListener('click', (e) => {
-        displayInput(e);
-    })
-})*/
-
-/*const displayInput = (valueInput) => {
-    displayValue = displayValue + valueInput;
-    display.innerText = displayValue;
-}
-
-buttons.forEach(button => {
-    addEventListener('click', () => {
-        displayInput(button.id);
-    })
-});
-displayInput();*/
+function clearDisplay() {
+    displayScreen.value ='';  
+} 
 
