@@ -8,32 +8,40 @@
     <title>Calculator</title>
 </head>
 <body>
-    <div class="container">
-            <input type="text" value="" class="display-screen">
-        <div class="button-container">
-            <input class="button" type="button" value="AC" id="ac-button" onClick="clearDisplay()">
-            <input class="button" type="button" value="+/-">
-            <input class="button" type="button" value="%">
-            <input class="button" type="button" value="/">
-            <br>
-            <input class="button"type="button" value="7">
-            <input class="button" type="button" value="8">
-            <input class="button" type="button" value="9">
-            <input class="button" type="button" value="x">
-            <br>
-            <input class="button" type="button" value="4">
-            <input class="button" type="button" value="5">
-            <input class="button" type="button" value="6">
-            <input class="button" type="button" value="-">
-            <br>
-            <input class="button" type="button" value="1">
-            <input class="button" type="button" value="2">
-            <input class="button" type="button" value="3">
-            <input class="button" type="button" value="+">
-            <br>
-            <input class="button" type="button" value="0">
-            <input class="button" type="button" value=".">
-            <input class="button" type="button" value="=">
+   <div class="container">
+        <div class="screen-row"> 
+            <div class="display-screen">
+                <div class="number-one"></div>
+                <div class="number-two"></div>
+            </div>
+        </div>
+        <div class="button-row row-1">
+            <button class="clear" value="AC">AC</button>
+            <button class="operator" value="/">/</button>
+         </div>
+         <div class="button-row row-2 row-3">
+            <button class="number" value="7">7</button>
+            <button class="number" value="8">8</button>
+            <button class="number" value="9">9</button>
+            <button class="operator" value="x">x</button>
+         </div>
+         <div class="button-row row-4">
+            <button class="number" value="4">4</button>
+            <button class="number" value="5">5</button>
+            <button class="number" value="6">6</button>
+            <button class="operator" value="x">-</button>
+        </div>
+        <div class="button-row row-5">
+            <button class="number" value="1">1</button>
+            <button class="number" value="2">2</button>
+            <button class="number" value="3">3</button>
+            <button class="operator" value="+">+</button>
+        </div>
+        <div class="button-row row-6">
+            <button class="number" value="0">0</button>
+            <button class="number" value=".">.</button>
+            <button class="equals total" value="=">=</button>
+        </div>
         </div>
     </div>
 </body>
