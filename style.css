@@ -5,12 +5,15 @@ body {
     flex-direction: column;
     width: 100vw;
     height: 100vh;
+    background-image: linear-gradient(rgb(57, 35, 57), white);
 }
 .container {
     max-width: auto;
     max-height: 100%;
     background-color: rgb(84, 84, 156);
     padding: 30px;
+    border-radius: 10px;
+    border: 3px solid black;
 }
 .screen-row {
     display: flex;
