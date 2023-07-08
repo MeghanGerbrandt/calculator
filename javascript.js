@@ -6,6 +6,7 @@ const number1 = document.querySelector('.number-one');
 const number2 = document.querySelector('.number-two');
 const equals = document.querySelector('.equals');
 const displayScreen = document.querySelector('.display-screen');
+const backspaceButton = document.querySelector('.delete');
 
 let numberStored = '';
 let operatorStored = ''
@@ -81,5 +82,14 @@ const clearDisplay = () => {
     number2.textContent = 0;
     numberStored = '';
     firstNumber = '';
+}
+
+backspaceButton.addEventListener('click', function() {
+  backspaceInput();
+});
+
+const backspaceInput = () => {
+  numberStored = numberStored.slice(0, -1);
+  number2.textContent = numberStored;
 }
 
